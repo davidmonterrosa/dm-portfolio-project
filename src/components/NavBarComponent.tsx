@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import icon from "../app/icon.jpeg";
-import { Playfair_Display, Source_Sans_3 } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 import React, { useEffect, useState } from "react";
 import {
   NavigationMenu,
@@ -21,9 +21,6 @@ import {
 // import { Button } from "./ui/button";
 // import MenuIcon from "./MenuIcon";
 
-const playfairDisplay = Playfair_Display({
-  subsets: ["latin"],
-});
 
 const sourceSans3 = Source_Sans_3({
   subsets: ["latin"],
@@ -43,7 +40,7 @@ function useMediaQuery(query: string): boolean {
 
 const NavBarComponent = () => {
   const [open, setOpen] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  // const [menuOpen, setMenuOpen] = useState(false);
 
   const isDesktop = useMediaQuery("(min-width: 768px)");
   if (isDesktop) {

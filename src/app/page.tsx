@@ -78,10 +78,10 @@ export default function Home() {
           <div className="md:w-1/2 text-center md:text-left space-y-4">
             <h2 className={`text-4xl ${playfairDisplay.className} font-bold`}>About Me</h2>
             <p className="text-lg leading-relaxed">
-              I'm a software developer and UC Davis alumnus with a background in cognitive science and a passion for building thoughtful, full-stack web applications. With over 1,000 hours of project-based training, I specialize in modern frameworks and tools like React, TypeScript, Next.js, Tailwind CSS, Azure, and Vercel.
+              I&aposm a software developer and UC Davis alumnus with a background in cognitive science and a passion for building thoughtful, full-stack web applications. With over 1,000 hours of project-based training, I specialize in modern frameworks and tools like React, TypeScript, Next.js, Tailwind CSS, Azure, and Vercel.
             </p>
             <p>
-              I focus on creating scalable, accessible, and user-centered solutions—and I'm especially interested in the practical use of AI and automation to solve everyday problems and streamline workflows.
+              I focus on creating scalable, accessible, and user-centered solutions—and I&aposm especially interested in the practical use of AI and automation to solve everyday problems and streamline workflows.
               Fluent in English and Spanish
             </p>
           </div>
@@ -189,7 +189,7 @@ export default function Home() {
                 className="group bg-muted rounded-xl p-6 shadow transition-all transform hover:scale-105 hover:bg-accent duration-300"
               >
                 <div className="flex flex-col items-center justify-center space-y-2">
-                  <img
+                  <Image
                     src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${icon}/${icon}-original.svg`}
                     alt={`${name} icon`}
                     className="w-12 h-12 grayscale group-hover:grayscale-0 transition duration-300"
