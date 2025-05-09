@@ -10,16 +10,7 @@ import {
   NavigationMenuList,
 } from "./ui/navigation-menu";
 import { ThemeToggle } from "./theme-toggle";
-import {
-  Drawer,
-  DrawerContent,
-  DrawerDescription,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "./ui/drawer";
-// import { Button } from "./ui/button";
-// import MenuIcon from "./MenuIcon";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
 
 
 const sourceSans3 = Source_Sans_3({
@@ -45,7 +36,7 @@ const NavBarComponent = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
   if (isDesktop) {
     return (
-      <nav className="rounded-full fixed top-0 xl:left-[calc((100%-80rem)/2)] z-50 w-full max-w-7xl bg-black/25 dark:bg-white/25 backdrop-blur-sm  flex justify-between mt-2 px-8 py-4 ">
+      <nav className="rounded-full fixed top-0 xl:left-[calc((100%-80rem)/2)] z-50 w-full max-w-7xl bg-black/25 dark:bg-white/25 backdrop-blur-sm  flex justify-between mt-2 px-8 py-1 ">
         <a href="#top">
           <Image
             src={icon}
@@ -74,7 +65,10 @@ const NavBarComponent = () => {
                 Skills
               </NavigationMenuLink>
             </NavigationMenuItem>
-            <ThemeToggle />
+
+            <NavigationMenuItem>
+              <ThemeToggle />
+            </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
       </nav>
@@ -82,7 +76,7 @@ const NavBarComponent = () => {
   }
 
   return (
-    <nav className="rounded-full fixed bg-[00000022] top-0 z-50 w-full flex justify-between p-4 ">
+    <nav className="rounded-full fixed top-0 xl:left-[calc((100%-80rem)/2)] z-50 w-full max-w-7xl bg-black/25 dark:bg-white/25 backdrop-blur-sm  flex justify-between mt-2 px-8 py-1 ">
       <Image
         src={icon}
         alt="Rose with Mountain Logo"
@@ -90,11 +84,10 @@ const NavBarComponent = () => {
         height={40}
         className="rounded-full"
       />
-      <Drawer open={open} onOpenChange={setOpen} direction="right">
-        <DrawerTrigger asChild>
+      <DropdownMenu open={open} onOpenChange={setOpen}>
+        <DropdownMenuTrigger asChild>
           {/* <MenuIcon aria-label="Open menu" isOpen={menuOpen} toggle={() => setMenuOpen(!menuOpen)} /> */}
           <div
-            role="button"
             className="relative bg-[00000000] w-[60px] h-[40px] cursor-pointer transition-transform duration-500"
             aria-label="Toggle menu"
           >
@@ -112,25 +105,30 @@ const NavBarComponent = () => {
               className={`absolute left-0 h-[9px] w-full dark:bg-black bg-white rounded-full transition-all duration-300 origin-left ${open ? "rotate-[-45deg] top-[39px] left-[8px]" : "rotate-0 top-[36px] left-0"}`}
             />
           </div>
-        </DrawerTrigger>
-        <DrawerContent className="space-y-4 py-6 px-4 text-lg">
-          <DrawerHeader className="text-xl font-bold">
-            <DrawerTitle> Menu </DrawerTitle>
-
-            <DrawerDescription className="sr-only"></DrawerDescription>
-          </DrawerHeader>
-          <a href="#about" onClick={() => setOpen(false)} className="block">
-            About
-          </a>
-          <a href="#projects" onClick={() => setOpen(false)} className="block">
-            Projects
-          </a>
-          <a href="#skills" onClick={() => setOpen(false)} className="block">
-            Skills
-          </a>
-          {/* <ThemeToggle /> */}
-        </DrawerContent>
-      </Drawer>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent className="min-w-full space-y-4 py-6 px-4 text-lg">
+          <DropdownMenuLabel className="text-xl font-bold">
+             Menu
+             <DropdownMenuSeparator />
+          </DropdownMenuLabel>
+          <DropdownMenuItem>
+            <a href="#about" onClick={() => setOpen(false)} className="block">
+              About
+            </a>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <a href="#projects" onClick={() => setOpen(false)} className="block">
+              Projects
+            </a>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <a href="#skills" onClick={() => setOpen(false)} className="block">
+              Skills
+            </a>
+            {/* <ThemeToggle /> */}
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
     </nav>
   );
 };

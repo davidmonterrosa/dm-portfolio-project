@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# David Monterrosa
+# Last Date Revised: 04/11/2025
+# "Project - Jobs that Interest you"
+### Description:
+You are to create a website with Next.JS/TypeScript about five places that you want to work at
 
-## Getting Started
+### Requirements:
+- Dive into why you want to work there (culture, benefits, hybrid, location)
+Does the job require the current stack that you know. Would you have learn new skills?
+What goals would you like to achieve in the hypothetical position?
+Do you currently have the skillsets for the job?
+If possible add a hyperlink to the Company and a closely related position.
 
-First, run the development server:
+Built in React, using either Bootstrap or Tailwind. Must use routers as a single page application
+Must be designed in a thoughtful manner
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Must be peer reviewed 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Also incorporate a document with the 5 jobs from the site and an additional 5 more with hyperlinks. This document will be used for professional development.
+Job Description
+Job Requirements
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Links
+[Vercel](https://dm-jobs-that-interest-you.vercel.app/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+Peer Reviewed By: Alan Batres
+> Comments: Everthings works fine just some slight overlap on some text but other than that it shows all of the requirements great job.
 
-To learn more about Next.js, take a look at the following resources:
+### Credits:
+"https://www.flaticon.com/free-icons/home-button"
+Home button icons created by Freepik - Flaticon</a>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+"https://www.flaticon.com/free-icons/github" 
+Github icons created by Pixel perfect - Flaticon
