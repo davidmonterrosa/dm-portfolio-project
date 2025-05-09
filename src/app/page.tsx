@@ -105,18 +105,21 @@ export default function Home() {
             {[
               {
                 title: 'Study Buddies',
+                thumbnail: '/assets/images/StudyBuddiesWebApp.webp',
                 description: 'A collaborative study platform with real-time chat and scheduling.',
-                github: 'https://github.com/your-username/study-buddies',
-                vercel: 'https://study-buddies.vercel.app',
+                github: 'https://github.com/davidmonterrosa/study-buddies-frontend.git',
+                vercel: 'https://study-buddies-frontend-seven.vercel.app/',
               },
               {
                 title: 'Project Two',
+                thumbnail: '/assets/images/StudyBuddiesWebApp.webp',
                 description: 'Description for project two.',
                 github: 'https://github.com/your-username/project-two',
                 vercel: 'https://project-two.vercel.app',
               },
               {
                 title: 'Project Three',
+                thumbnail: '/assets/images/StudyBuddiesWebApp.webp',
                 description: 'Description for project three.',
                 github: 'https://github.com/your-username/project-three',
                 vercel: 'https://project-three.vercel.app',
@@ -126,14 +129,13 @@ export default function Home() {
                 key={index}
                 className="rounded-xl overflow-hidden shadow-lg bg-muted hover:scale-105 transition-transform font-source"
               >
-                {/* Optional image section */}
-                {/* <Image
-          src={`/assets/images/project${index + 1}.jpg`}
-          alt={`${project.title} thumbnail`}
-          width={600}
-          height={400}
-          className="object-cover w-full h-48"
-        /> */}
+                <Image
+                  src={`${project.thumbnail}`}
+                  alt={`${project.title} thumbnail`}
+                  width={600}
+                  height={400}
+                  className="object-cover w-full h-48"
+                />
 
                 <div className="p-4 flex flex-col justify-between h-full space-y-4">
                   <div>
@@ -174,6 +176,9 @@ export default function Home() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
             {[
               { name: 'React', icon: 'react' },
+              { name: 'HTML', icon: 'html5' },
+              { name: 'C Sharp', icon: 'csharp' },
+              { name: 'Microsoft SQL Server', icon: 'microsoftsqlserver' },
               { name: 'Next.js', icon: 'nextjs' },
               { name: 'Tailwind', icon: 'tailwindcss' },
               { name: 'TypeScript', icon: 'typescript' },

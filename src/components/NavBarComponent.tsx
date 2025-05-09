@@ -61,17 +61,19 @@ const NavBarComponent = () => {
         <NavigationMenu className={`${sourceSans3.className}`}>
           <NavigationMenuList className="space-x-8">
             <NavigationMenuItem>
-              <NavigationMenuLink className="text-xl">About</NavigationMenuLink>
+              <NavigationMenuLink href="#about" className="text-xl">
+                About
+              </NavigationMenuLink>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuLink className="text-xl">
+              <NavigationMenuLink href="#projects" className="text-xl">
                 Projects
               </NavigationMenuLink>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuLink className="text-xl">
+              <NavigationMenuLink href="#skills" className="text-xl">
                 Skills
               </NavigationMenuLink>
             </NavigationMenuItem>
