@@ -108,8 +108,8 @@ const NavBarComponent = () => {
         </DropdownMenuTrigger>
         <DropdownMenuContent className="min-w-full space-y-4 py-6 px-4 text-lg">
           <DropdownMenuLabel className="text-xl font-bold">
-             Menu
-             <DropdownMenuSeparator />
+            Menu
+            <DropdownMenuSeparator />
           </DropdownMenuLabel>
           <DropdownMenuItem>
             <a href="#about" onClick={() => setOpen(false)} className="block">

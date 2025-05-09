@@ -24,8 +24,11 @@ Job Requirements
 [Vercel](https://dm-jobs-that-interest-you.vercel.app/)
 
 
-Peer Reviewed By: Alan Batres
-> Comments: Everthings works fine just some slight overlap on some text but other than that it shows all of the requirements great job.
+### Peer Reviewed By: Robert G
+
+> **Comments:** It looks good.  
+> Only found one issue: when the user loads up the page with their theme set to dark by default, they have to press the toggle twice.
+
 
 ### Credits:
 "https://www.flaticon.com/free-icons/home-button"
