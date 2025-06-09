@@ -15,7 +15,7 @@ const sourceSans3 = Source_Sans_3({
 export default function Home() {
   return (
     <>
-      <section className="h-screen w-full flex flex-col md:flex-row">
+      <section className="md:h-screen w-full flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 aspect-video relative">
           <Image
             src="/assets/images/DavidIsAdventurous.webp"
@@ -27,7 +27,7 @@ export default function Home() {
           />
         </div>
         <article className="w-full md:w-1/2 flex items-center justify-center text-center">
-          <div className="flex flex-col gap-4 md:pe-10">
+          <div className="flex flex-col gap-4 pt-6 md:pt-0 md:pe-10">
             <h1 className={`lg:text-6xl md:text-4xl text-2xl font-bold ${playfairDisplay.className}`}>David Monterrosa</h1>
             <h2 className={`md:text-xl text-lg ${sourceSans3.className}`}>Full-Stack Software Developer and Engineer.</h2>
             <div className="flex justify-center ">
@@ -104,17 +104,17 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
             {[
-              { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+              { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
+              { name: 'Github', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
               { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
               { name: 'CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+              { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
+              { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+              { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+              { name: 'Tailwind', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg' },
               { name: 'Vercel', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg' },
-              { name: 'Github', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
-              { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
               { name: 'C Sharp', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg' },
               { name: 'Microsoft SQL Server', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg' },
-              { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
-              { name: 'Tailwind', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg' },
-              { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
               { name: 'Azure', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg' },
             ].map(({ name, icon }) => (
               <div
@@ -160,17 +160,10 @@ export default function Home() {
               },
               {
                 title: 'Pokemon API APP',
-                thumbnail: '/assets/images/ChronoLog.webp',
+                thumbnail: '/assets/images/PokemonApiApp.png',
                 description: 'Upcoming Project to be done using Python used to automate tracking of billable hours and improve workflows.',
-                github: 'null',
-                vercel: 'null',
-              },
-              {
-                title: 'ChronoLog | Python Time Tracker',
-                thumbnail: '/assets/images/ChronoLog.webp',
-                description: 'Upcoming Project to be done using Python used to automate tracking of billable hours and improve workflows.',
-                github: 'null',
-                vercel: 'null',
+                github: 'https://github.com/davidmonterrosa/dm-pokemonapi-next-rebuild.git',
+                vercel: 'https://dm-pokemonapi-next-rebuild.vercel.app/',
               },
             ].map((project, index) => (
               <div
@@ -185,15 +178,16 @@ export default function Home() {
                   className="object-cover w-full h-48"
                 />
 
-                <div className="p-4 flex flex-col h-full">
+                <div className="p-4 flex flex-col">
                   <div>
                     <h3 className="text-xl font-bold">{project.title}</h3>
-                    <p className="text-sm text-muted-foreground mt-2">
+                    <p className="text-sm text-muted-foreground mt-2 grow">
                       {project.description}
                     </p>
                   </div>
-                  <div className="flex gap-4 mt-4 ">
-                  <Button className="p-8 bg-[00000000] hover:bg-[00000000] hover:scale-125 transition-transform">
+
+                  <div className="flex justify-around mt-4 ">
+                  <Button className="p-4 bg-[00000000] hover:bg-[00000000] hover:scale-125 transition-transform">
                       <Link
                         href={project.github}
                         target="_blank"
@@ -203,12 +197,12 @@ export default function Home() {
                         GitHub
                       </Link>
                     </Button>
-                    <Button className="p-8 bg-[00000000] hover:bg-[00000000] hover:scale-125 transition-transform">
+                    <Button className="p-4 bg-[00000000] hover:bg-[00000000] hover:scale-125 transition-transform">
                       <Link
                         href={project.vercel}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-white text-black px-4 py-2 rounded-md border hover:bg-gray-100 transition-colors"
+                        className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors"
                       >
                         Live Site
                       </Link>

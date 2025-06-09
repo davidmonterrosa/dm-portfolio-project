@@ -1,27 +1,22 @@
 # David Monterrosa
-# Last Date Revised: 04/11/2025
-# "Project - Jobs that Interest you"
+# Last Date Revised: 05/09/2025
+# "Project - Portfolio"
 ### Description:
-You are to create a website with Next.JS/TypeScript about five places that you want to work at
+Website Portfolio for David Monterrosa
 
 ### Requirements:
-- Dive into why you want to work there (culture, benefits, hybrid, location)
-Does the job require the current stack that you know. Would you have learn new skills?
-What goals would you like to achieve in the hypothetical position?
-Do you currently have the skillsets for the job?
-If possible add a hyperlink to the Company and a closely related position.
+Requirements
 
-Built in React, using either Bootstrap or Tailwind. Must use routers as a single page application
-Must be designed in a thoughtful manner
-
-Must be peer reviewed 
-
-Also incorporate a document with the 5 jobs from the site and an additional 5 more with hyperlinks. This document will be used for professional development.
-Job Description
-Job Requirements
+Built in React
+About Me Section
+Projects Section
+Skills Section
+Phone Number
+Email
+Links to LinkedIn, GitHub, and Resume
 
 ### Links
-[Vercel](https://dm-jobs-that-interest-you.vercel.app/)
+[Vercel](https://david-monterrosa-dev.vercel.app/)
 
 
 ### Peer Reviewed By: Robert G

@@ -84,7 +84,7 @@ const NavBarComponent = () => {
         height={40}
         className="rounded-full"
       />
-      <DropdownMenu open={open} onOpenChange={setOpen}>
+      <DropdownMenu modal={true} open={open} onOpenChange={setOpen}>
         <DropdownMenuTrigger asChild>
           {/* <MenuIcon aria-label="Open menu" isOpen={menuOpen} toggle={() => setMenuOpen(!menuOpen)} /> */}
           <div
@@ -125,7 +125,9 @@ const NavBarComponent = () => {
             <a href="#skills" onClick={() => setOpen(false)} className="block">
               Skills
             </a>
-            {/* <ThemeToggle /> */}
+          </DropdownMenuItem>
+          <DropdownMenuItem className="flex justify-center">
+            <ThemeToggle />
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
