@@ -44,7 +44,7 @@ export default function Home() {
                 </Button>
 
                 <Button variant="ghost" aria-label="Open David Monterrosa's LinkedIn" className="bg-[00000000] hover:bg-[00000000]">
-                  <Link href="/assets/documents/DavidMonterrosaResume.pdf" target="_blank" rel="noopener noreferrer" className="mt-4 cursor-pointer">
+                  <Link href="/assets/documents/DavidMonterrosa_Resume.pdf" target="_blank" rel="noopener noreferrer" className="mt-4 cursor-pointer">
                     <Image
                       className="dark:invert"
                       src="/assets/images/Filetext.svg"
